@@ -148,8 +148,7 @@ select{
 
 
 /*----------------Media Query*/
-
-@media only screen and (max-width: 640px){
+@media (min-width: 400px){
     body{
         min-height: 100vh;
     }
@@ -167,9 +166,42 @@ select{
     padding: 0.5rem;
     font-size: 2rem;
     width: 10%;
-}
-input{
+    }
+    input{
     width: 50%;
+    }
+    
+    .select{
+       display: none;
+    }
+    
+  
 }
 
+
+@media (min-width: 640px){
+    body{
+        min-height: 100vh;
+    }
+    header{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    header,form{
+        min-height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    width: 10%;
+    }
+    input{
+    width: 50%;
+    }
+    .select{
+        display: none;
+     }
 }
