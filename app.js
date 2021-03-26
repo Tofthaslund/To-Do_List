@@ -18,5 +18,9 @@ function addTodo(event){
     newTodo.innerText = 'hey there';
     newTodo.classList.add('todo-item');
     todoDiv.appendChild(newTodo);
-    
-};
+    //Check mark button
+    const completedButton = document.createElement('button');
+    completedButton.innerHTML = '<i class="fas fa-check"></i>';
+    completedButton.classList.add("complete-btn");
+    todoDiv.appendChild(completedButton)
+}
